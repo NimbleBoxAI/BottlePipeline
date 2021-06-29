@@ -141,8 +141,8 @@ def main():
     Driver Code
   """
   st.title("Bottle Processing Pipeline")
-  st.header('Step 1: Upload Reference Image')
-  st.write('Color of Inputted Bottles are compared against the Reference Image')
+  st.header('Step 1: Upload reference image to set the desired color')
+  st.write('Color of input bottle images are compared against the reference Image')
 
   #Get the Reference Image
   ref_img = st.file_uploader("Upload Reference Image", accept_multiple_files=False)
@@ -151,10 +151,10 @@ def main():
     st.image(ref, width=200)
 
   st.header('Step 2: Set Tolerance')
-  tolerance_definition = "Lower the tolerance, higher needs to be the confidence of the model before classifying a Bottle as the same color as reference image "
+  tolerance_definition = "Tolerance sets the deviation in color tone from the reference image. Needs to be tuned."
   st.write(tolerance_definition)
   #Get the tolerance Value
-  tolerance = st.number_input(label='Tolerance')
+  tolerance = st.number_input(label='Tolerance', value=0.2)
 
   st.header('Step 3: Upload Images.')
   st.write("""Upload picture(s) of Bottle(s) for prediction""")
