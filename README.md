@@ -12,7 +12,7 @@ Files:
 Simply run the Streamlit app to use this tool ->
 ```
 
-$ streamlit run run.py
+$ streamlit run app.py
 
   You can now view your Streamlit app in your browser.
 
