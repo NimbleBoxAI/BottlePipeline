@@ -1,10 +1,9 @@
 # BottlePipeline
 
-A Simple tool to classify images of bottles based on Color and if their cap is on or off.
 The pipeline involves [Bottle Segmentation](https://github.com/NimbleBoxAI/BottleSegmentation), [Bottle Color Detection](https://github.com/NimbleBoxAI/BottleColourDetector) & [Bottle Cap Detection](https://github.com/NimbleBoxAI/CapDetection).
 
 Files:
-- 'infer.py': Bottle Segmentation 
+- 'infer.py': Bottle Segmentation and cap detection
 - 'color.py': Color Detection
 - 'app.py': streamlit webapp for this example
 
